@@ -10,7 +10,7 @@ import unittest, time, re
 
 class Testember(unittest.TestCase):
     def setUp(self):
-        phantomjsPath="/usr/bin/phantomjs"
+        phantomjsPath="/var/lib/phantomjs"
         self.driver = webdriver.PhantomJS(executable_path=phantomjsPath)
         #firefoxPath="/usr/local/bin/geckodriver"
         #self.driver = webdriver.Firefox(executable_path=firefoxPath)

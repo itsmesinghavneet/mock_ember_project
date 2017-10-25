@@ -12,7 +12,7 @@ class Testember(unittest.TestCase):
     def setUp(self):
     	#firefoxPath="/home/cb/Downloads/geckodriver"
         #self.driver = webdriver.Firefox(executable_path=firefoxPath)
-        self.driver = ChromeDriver()
+        self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
         self.base_url = "http://20.10.83.21:4200/"
         self.verificationErrors = []

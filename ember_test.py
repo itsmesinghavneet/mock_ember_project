@@ -10,8 +10,9 @@ import unittest, time, re
 
 class Testember(unittest.TestCase):
     def setUp(self):
-        firefoxPath="/usr/local/bin/geckodriver"
-        self.driver = webdriver.Firefox(executable_path=firefoxPath)
+        self.driver = webdriver.PhantomJS()
+        #firefoxPath="/usr/local/bin/geckodriver"
+        #self.driver = webdriver.Firefox(executable_path=firefoxPath)
         #self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
         self.base_url = "http://20.10.83.21:4200/"

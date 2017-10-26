@@ -15,7 +15,7 @@ class Testember(unittest.TestCase):
     def setUp(self):
         display = Display(visible=0, size=(1366, 768))
         display.start()
-        self.driver.set_window_size(1366, 768)
+        #self.driver.set_window_size(1366, 768)
         firefoxPath="/home/cb/Downloads/geckodriver"
         #firefoxPath="/home/ci/geckodriver"
         self.driver = webdriver.Firefox(executable_path=firefoxPath)

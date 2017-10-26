@@ -9,7 +9,7 @@ import unittest, time, re
 
 class Testember(unittest.TestCase):
     def setUp(self):
-        phantomjsPath="/usr/bin/phantomjs"
+        phantomjsPath="/home/cb/Desktop/temp/phantomjs-1.9.8-linux-x86_64/bin"
         self.driver = webdriver.PhantomJS(executable_path=phantomjsPath)
     	#chromePath="/usr/bin/chromedriver"
     	#self.driver = webdriver.Chrome(executable_path=chromePath)
@@ -17,7 +17,7 @@ class Testember(unittest.TestCase):
         #self.driver = webdriver.Firefox(executable_path=firefoxPath)
         #self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
-        self.base_url = "http://20.10.83.21:4200/"
+        self.base_url = "http://localhost:4200/"
         self.verificationErrors = []
         self.accept_next_alert = True
     

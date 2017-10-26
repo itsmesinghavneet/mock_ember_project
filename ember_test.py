@@ -13,11 +13,11 @@ class Testember(unittest.TestCase):
     #display = Display(visible=0, size=(800, 600))
     #display.start()
     def setUp(self):
-        firefoxPath="/home/cb/Downloads/geckodriver"
+        #firefoxPath="/home/cb/Downloads/geckodriver"
         #firefoxPath="/home/ci/geckodriver"
-        self.driver = webdriver.Firefox(executable_path=firefoxPath)
-        #phantomjsPath="/usr/bin/phantomjs"
-        #self.driver = webdriver.PhantomJS(executable_path=phantomjsPath)
+        #self.driver = webdriver.Firefox(executable_path=firefoxPath)
+        phantomjsPath="/home/cb/Desktop/temp/phantomjs-1.9.8-linux-x86_64/bin/phantomjs"
+        self.driver = webdriver.PhantomJS(executable_path=phantomjsPath)
     	#chromePath="/usr/bin/chromedriver"
     	#self.driver = webdriver.Chrome(executable_path=chromePath)
         #firefoxPath="/usr/bin/geckodriver"

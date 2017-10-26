@@ -16,8 +16,8 @@ class Testember(unittest.TestCase):
         display = Display(visible=0, size=(1366, 768))
         display.start()
         #self.driver.set_window_size(1366, 768)
-        firefoxPath="/home/cb/Downloads/geckodriver"
-        #firefoxPath="/home/ci/geckodriver"
+        #firefoxPath="/home/cb/Downloads/geckodriver"
+        firefoxPath="/home/ci/geckodriver"
         self.driver = webdriver.Firefox(executable_path=firefoxPath)
         #phantomjsPath="/home/cb/Desktop/temp/phantomjs-1.9.8-linux-x86_64/bin/phantomjs"
         #self.driver = webdriver.PhantomJS(executable_path=phantomjsPath)
@@ -27,7 +27,7 @@ class Testember(unittest.TestCase):
         #self.driver = webdriver.Firefox(executable_path=firefoxPath)
         #self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
-        self.base_url = "http://localhost:4200/"
+        self.base_url = "http://20.10.83.21:4200/"
         self.verificationErrors = []
         self.accept_next_alert = True
     

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-from pyvirtualdisplay import Display
+#from pyvirtualdisplay import Display
+import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -9,11 +10,11 @@ from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re
 
 class Testember(unittest.TestCase):
-    display = Display(visible=0, size=(800, 600))
-    display.start()
+    #display = Display(visible=0, size=(800, 600))
+    #display.start()
     def setUp(self):
-        #firefoxPath="/home/cb/Downloads/geckodriver"
-        firefoxPath="/home/ci/geckodriver"
+        firefoxPath="/home/cb/Downloads/geckodriver"
+        #firefoxPath="/home/ci/geckodriver"
         self.driver = webdriver.Firefox(executable_path=firefoxPath)
         #phantomjsPath="/usr/bin/phantomjs"
         #self.driver = webdriver.PhantomJS(executable_path=phantomjsPath)

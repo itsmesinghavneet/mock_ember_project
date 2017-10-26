@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#from pyvirtualdisplay import Display
+from pyvirtualdisplay import Display
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By

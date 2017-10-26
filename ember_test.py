@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -12,9 +11,11 @@ class Testember(unittest.TestCase):
     def setUp(self):
         phantomjsPath="/usr/bin/phantomjs"
         self.driver = webdriver.PhantomJS(executable_path=phantomjsPath)
-        #firefoxPath="/usr/local/bin/geckodriver"
+    	#chromePath="/usr/bin/chromedriver"
+    	#self.driver = webdriver.Chrome(executable_path=chromePath)
+        #firefoxPath="/usr/bin/geckodriver"
         #self.driver = webdriver.Firefox(executable_path=firefoxPath)
-        #self.driver = webdriver.Chrome()
+        #self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
         self.base_url = "http://20.10.83.21:4200/"
         self.verificationErrors = []
